@@ -1,0 +1,429 @@
+/* RESET All ELEMENT */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+html, body, div, span, table, caption, tbody, tfoot, thead, tr, th, td, font, img, small, strong, sub, sup, p, a, dl, dt, dd, ol, ul, li, form, label {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* SPECIAL RESET */
+ol, ul {
+  list-style: none;
+}
+
+/*th,td{font-weight:normal;text-align:left;}*/
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+/*============================================
+=                    Base                    =
+============================================*/
+html * {
+  max-height: 1000000px;
+  /*-webkit-text-size-adjust: 100%;*/
+}
+
+a {
+  color: #535353;
+  text-decoration: none;
+}
+
+a, area {
+  outline: none;
+  hlbr: expression(this.onFocus=this.blur());
+}
+
+img {
+  vertical-align: top;
+}
+
+/*iframeRwd*/
+/*=============================================
+=                  All setting               =
+=============================================*/
+/*=============================================
+=                  partners                   =
+=============================================*/
+.subContPage .kv {
+  height: 400px;
+}
+
+.subContPage .dec {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.subContPage .p2 {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: .8px;
+  line-height: 1.8;
+  padding: 0 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  font-weight: 500;
+  color: #3E4658;
+}
+
+.subContPage .p2:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 5px;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #2253ad;
+}
+
+.subContPage .p3 {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: .8px;
+  line-height: 1.7;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  color: #3E4658;
+}
+
+.subContPage .page5 .block {
+  max-width: 80%;
+}
+
+.subContPage .page5 .block .contBox .box {
+  position: relative;
+  width: 45%;
+  margin: 2.5%;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.subContPage .page5 .block .contBox .box:nth-child(1) {
+  margin: 2.5% 2.5% 2.5% 0%;
+}
+
+.subContPage .page5 .block .contBox .txt h4 {
+  text-align: left;
+  font-size: 28px;
+  color: #121516;
+  margin: 0 0 10px;
+}
+
+.subContPage .page5 .block .contBox .txt .anchorUrl {
+  color: #2253ad;
+  font-weight: 500;
+}
+
+.subContPage .page5 .block .contBox .txt .moreBtn3 {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 18px 0 8px 0;
+  color: #2253ad;
+  font-weight: 700;
+  margin: 0 25px;
+}
+
+.subContPage .page5 .block .contBox .txt .moreBtn3 .arrow {
+  position: relative;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-left: 1px solid #2253ad;
+  border-top: 1px solid #2253ad;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin: 0 3px 2px 0;
+}
+
+.subContPage .page5 .block .contBox .txt .moreBtn3:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding-bottom: 1px;
+  background: #2253ad;
+}
+
+.subContPage .page6 {
+  padding: 60px 0 120px;
+}
+
+.subContPage .page6 .block .txtBox {
+  max-width: 670px;
+}
+
+.subContPage .page6 .p2:before {
+  background: #fff102;
+}
+
+.subContPage .page7 .p2:nth-child(3) {
+  padding: 20px 25px 0;
+}
+
+.subContPage .page7 .block {
+  max-width: 80%;
+}
+
+.subContPage .page7 .block .contBox .box {
+  position: relative;
+  width: 45%;
+  margin: 2.5%;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+.subContPage .page7 .block .contBox .box:nth-child(1) {
+  margin-top: -120px;
+}
+
+.subContPage .page7 .block .contBox .txt h4 {
+  text-align: left;
+  font-size: 28px;
+  color: #121516;
+  margin: 0 0 10px;
+}
+
+.subContPage .page7 .block .contBox .txt .anchorUrl {
+  color: #2253ad;
+  font-weight: 500;
+}
+
+.partnersCont .kv {
+  background: url(/img/bg6.png) 0 50% no-repeat;
+  background-size: cover;
+  margin-top: 65px;
+}
+
+.partnersCont .kv .mask {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(35%, rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1)));
+  background-image: linear-gradient(360deg, black 0%, rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0.1) 100%);
+}
+
+.partnersCont .subpage1 .outerbox {
+  background: transparent;
+}
+
+.partnersCont .subpage1 .outerbox .block {
+  max-width: 100%;
+}
+
+.partnersCont .subpage1 .boxCont .box {
+  position: relative;
+  display: inline-block;
+  float: left;
+  border: 1px solid #e8e8e8;
+  width: 17%;
+  margin: 1.3%;
+}
+
+.partnersCont .subpage2 {
+  background: url(/img/bg7.png) 0 100% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.partnersCont .subpage2 h3 {
+  color: #fff;
+}
+
+.partnersCont .subpage2 .p1 {
+  color: #fff;
+}
+
+.partnersCont .subpage2 .block .txtBox .productG {
+  position: relative;
+  padding: 2rem 0 0;
+}
+
+.partnersCont .subpage2 .block .txtBox .moreBtn3 {
+  width: 45%;
+  text-align: left;
+  color: #fff102;
+}
+
+.partnersCont .subpage2 .block .txtBox .moreBtn3 .arrow {
+  border-left: 1px solid #fff102;
+  border-top: 1px solid #fff102;
+}
+
+.partnersCont .subpage2 .block .txtBox .moreBtn3:before {
+  display: none;
+}
+
+.aboutCont .kv {
+  background: url(/img/bg8.png) 0 50% no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.aboutCont .kv .block {
+  top: 50%;
+}
+
+.aboutCont .dec {
+  max-width: 900px;
+  width: 90%;
+}
+
+.aboutCont .dec h2 {
+  margin: 10px 0 30px;
+}
+
+.aboutCont .subpage2 {
+  background: url(/img/bg9.png) 0 100% no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.aboutCont .subpage2 h4 {
+  text-align: left;
+  font-size: 28px;
+  color: #fff;
+  margin: 0 0 10px;
+}
+
+.aboutCont .subpage2 .p2 {
+  color: #fff;
+}
+
+/*=============================================
+=                     RWD                     =
+=============================================*/
+@media screen and (max-width: 1100px) {
+  .partnersCont .subpage1 .outerbox .block {
+    max-width: 80%;
+  }
+  .partnersCont .subpage1 .boxCont .box {
+    width: 22%;
+  }
+}
+
+@media screen and (max-width: 886px) {
+  .partnersCont .subpage1 .boxCont .box {
+    width: 30%;
+  }
+  .partnersCont .subpage2 {
+    padding: 20px 0 0;
+    height: 400px;
+    min-height: auto;
+  }
+  .subContPage .page5 .block .contBox .box {
+    width: 90%;
+  }
+  .subContPage .page5 .block .contBox .box:nth-child(1) {
+    margin: 2.5% 5%;
+  }
+  .subContPage .page5 .block .contBox .img {
+    width: 90%;
+    margin: 2.5% 5%;
+  }
+  .subContPage .page6 .block .txtBox {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+  .subContPage .page7 .block .contBox .box {
+    width: 90%;
+    margin: 2.5% 5%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .partnersCont .subpage1 .boxCont .box {
+    width: 45%;
+    margin: 2%;
+  }
+  .aboutCont .kv {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .partnersCont .subpage1 .outerbox {
+    min-width: 100%;
+  }
+  .partnersCont .subpage2 {
+    height: auto;
+    min-height: 450px;
+    background-attachment: unset;
+  }
+  .aboutCont .dec {
+    max-width: 100%;
+    width: 100%;
+  }
+  .aboutCont .dec .p1 {
+    text-align: left;
+    line-height: 1.8;
+  }
+  .subContPage .dec h2 {
+    margin: 10px 0;
+    text-align: left;
+  }
+  .subContPage .dec .p1 {
+    margin: 0;
+  }
+  .subContPage .p2 {
+    padding: 0 0 0 25px;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  .subContPage .p3 {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  .subContPage .page5 .block .contBox .box {
+    width: 100%;
+    margin: 0;
+  }
+  .subContPage .page5 .block .contBox .box:nth-child(1) {
+    margin: 2.5% 0;
+  }
+  .subContPage .page5 .block .contBox .img {
+    margin: 0;
+  }
+  .subContPage .page5 .block .contBox .txt .moreBtn3 {
+    font-size: 20px;
+    padding: 24px 0 16px 0;
+    margin: 0;
+  }
+  .subContPage .page7 .p2:nth-child(3) {
+    padding: 20px 0 0 25px;
+  }
+  .subContPage .page7 .block .contBox .box {
+    width: 100%;
+    margin: 2.5% 0;
+  }
+}
+/*# sourceMappingURL=partners.css.map */
