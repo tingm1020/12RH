@@ -1,36 +1,8 @@
 $(document).ready(function(){
-    // Loading要先做的動作
-    // $('.loading').addClass('on');
-    $(window).on('load',function(){});
+    // AOS動態引入
+    AOS.init();
 
-
-    
-    // 選單展開
-    function menuOpen(){
-        $('.navOpen,.menuBox').addClass('on');
-    }
-    function menuClose(){
-        $('.navOpen,.menuBox,.innerBox .navBtnOpen').removeClass('on');
-    }
-    $('.navOpen').click(function(){
-        if($('.menuBox').hasClass('on')){
-            menuClose();
-        } else{
-            menuOpen();
-        }
-    });
-    $('.navBtnOpen').click(function(){
-        if($(this).hasClass('on')){
-            $(this).removeClass('on');
-        } else{
-            $(this).addClass('on');
-        }
-    });
-    $('.dropBtn').click(function(){
-        if($('.navOpen,.menuBox').hasClass('on')){
-            menuClose();
-        }
-    })
+   
     $('.float-goTopBtn').click(function(){
         $('html,body').animate({
             scrollTop: $('.anchor1').offset().top - 50 + "px"
@@ -40,59 +12,57 @@ $(document).ready(function(){
         $('.float-socialBlock').toggleClass('on');
     });
     // 依數列滾動到頁面
-    $.each(Array(9),function(i){
-        var scrollPage = $('.anchorBtn' + (i));
-        var anchor = $('.subanchor' + (i));
+    $.each(Array(8),function(i){
+        var scrollPage = $('.navBtn' + (i));
+        var page = $('.anchor' + (i));
         $(scrollPage).click(function(){
             menuClose();
             $('html,body').animate({
-                scrollTop: $(anchor).offset().top - 80 +"px"
-            },0);
+                scrollTop: $(page).offset().top - 0 +"px"
+                
+            },1000);
         });
     });
-
-
-
+    // 計數
+    function counted(){
+        $(".counter").each(function () {
+            var count = $(this);
+            var countTo = count.attr('data-count');
+            // console.log(countTo);
+            $({countNum:count.text()}).animate({
+                    countNum:countTo,
+                },
+                {
+                    duration:3000,
+                    easing:'linear',
+                    step:function(){
+                        count.text(Math.floor(this.countNum));
+                    },
+                    complete:function(){
+                        count.text(this.countNum);
+                    }
+            });
+        });
+    }
     
-    
-    $('.newsCont .box').mouseover(function(){
-        if(screen.width > 499){
-            $(this).addClass('on');
-        }
-    });
-    $('.newsCont .box').mouseout(function(){
-        if(screen.width > 499){
-           $(this).removeClass('on'); 
-        }
-    });
-    // tableCont2 B. 上方標籤切換
-    $('.selectBtn').click(function(){
-        if($(this).hasClass('selectTab1')){
-            $('.selectTab2').removeClass('on');
-            $(this).addClass('on');
-            $('.tabTable').removeClass('tab2').addClass('tab1').html('<table class="table"><tbody><tr class="headTr"><td class="tdB nB">表格一</td><td class="mainTd">列標一</td><td class="mainTd">列標二</td><td class="mainTd">列標三</td></tr><tr class="trB"><td class="tdB nB">任一欄</td><td class="t1">測試文字</td><td class="t1">測試文字</td><td class="t1">測試文字</td></tr><tr class="trB"><td class="tdB nB">任一欄</td><td class="t1">測試文字</td><td class="t1">測試文字</td><td class="t1">測試文字</td></tr><tr><td class="tdB nB nBB">最後一欄</td><td class="t1 nBB">測試文字</td><td class="t1 nBB">測試文字</td><td class="t1 nBB">測試文字</td></tr></tbody></table>');
-        }
-        if($(this).hasClass('selectTab2')){
-            $('.selectTab1').removeClass('on');
-            $(this).addClass('on');
-            $('.tabTable').removeClass('tab1').addClass('tab2').html('<table class="table"><tbody><tr class="headTr"><td class="tdB nB">表格二</td><td class="mainTd">列標一</td><td class="mainTd">列標二</td><td class="mainTd">列標三</td></tr><tr class="trB"><td class="tdB nB">任一欄</td><td class="t1">測試文字</td><td class="t1">測試文字</td><td class="t1">測試文字</td></tr><tr class="trB"><td class="tdB nB">任一欄</td><td class="t1">測試文字</td><td class="t1">測試文字</td><td class="t1">測試文字</td></tr><tr><td class="tdB nB nBB">最後一欄</td><td class="t1 nBB">測試文字</td><td class="t1 nBB">測試文字</td><td class="t1 nBB">測試文字</td></tr></tbody></table>');
-        }
-    });
     // logo滑超過範圍變換顏色
     $(window).scroll(function(){
-        var wrap = window.innerHeight * .7;
-        var wrapOver = window.innerHeight * 4.1;
-        if(getScrollTop() > wrap){
-            $('.anchorBox').addClass('fixed');
-        } else{
-            $('.anchorBox').removeClass('fixed');
-            if($('.anchorBox').hasClass('fixed')){
-                $(this).removeClass('on');
-            }
-        }
-        if(getScrollTop() > wrapOver){
-            $('.anchorBox').removeClass('fixed');
-        }
+        var logoPC = window.innerHeight * 1;
+        var logo = window.innerHeight * .2;
+        var scroll = $(window).scrollTop();
+
+        if(scroll > 30){
+            $('.kv .contBox').addClass('on');
+        } 
+        if(scroll > 650){
+            $('.page1 .title').addClass('on');
+        } 
+        if(scroll > 1200){
+            $('.page1 .logoBox').addClass('on');
+        } 
+        if(scroll > 3000){
+            counted();
+        } 
     });
     function getScrollTop() {
         var bodyTop = 0;
