@@ -620,7 +620,8 @@ body,html{
 				p{
 					position: relative;
 					display: inline-block;
-					font-size: 4.5vw;
+					// font-size: 4.5vw;
+					font-size: 60px;
 					line-height: 1.5;
 					text-shadow: 0 10px 30px #ffffff;
 					&::before{
@@ -659,7 +660,8 @@ body,html{
 					position: relative;
 					display: inline-block;
 					line-height: 1.7;
-					font-size: 4.5vw;
+					// font-size: 4.5vw;
+					font-size: 60px;
 					color: $C2;
 					font-weight: 500;
 					text-shadow: 0 10px 30px #fff;
@@ -915,7 +917,8 @@ body,html{
 						margin: 1.5%;
 						line-height: 1;
 						font-weight: 400;
-						font-size: 5vw;
+						// font-size: 5vw;
+						font-size: 72px;
 						color: $C3;
 						text-shadow: 0 10px 20px #fff;
 						&:before{
@@ -1092,6 +1095,9 @@ body,html{
 					.img{
 						width: 90%;
 					}
+					.txt{
+						font-size: 4.5vw;
+					}
 				}
 			}
 			.otherCont {
@@ -1107,7 +1113,13 @@ body,html{
 					}
 				}
 			}
-			
+			.belCont{
+				.txt{
+					p{
+						font-size: 4vw;
+					}
+				}
+			}
 			.timeCont {
 				.txtBox {
 					.unLineTxt{
@@ -1146,7 +1158,7 @@ body,html{
 				.contBox {
 					.txtBox {
 						.txt{
-							font-size: 6.5vw;
+							font-size: 5vw;
 						}
 					}
 				}
@@ -1161,7 +1173,7 @@ body,html{
 		width: 55px;
 	}
 	.telegramBtn{
-		bottom: 10%;
+		bottom: 12%;
 	}
 	.goTopBtn{
 		bottom: 0;

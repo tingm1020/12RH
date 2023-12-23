@@ -23,6 +23,11 @@ $(document).ready(function(){
             },1000);
         });
     });
+    $('.goTopBtn').click(function(){
+        $('html,body').animate({
+            scrollTop: $('.kv').offset().top - 50 + "px"
+        },500);
+    });
     // 計數
     function counted(){
         $(".counter").each(function () {
