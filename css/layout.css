@@ -1162,6 +1162,35 @@ body, html {
           transform: translate(-50%, -50%);
 }
 
+.main .page .logoBox .logoCont:hover .logo {
+  -webkit-animation: shake .6s forwards;
+          animation: shake .6s forwards;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 5px;
+  }
+  25%, 75% {
+    margin-top: -5px;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 5px;
+  }
+  25%, 75% {
+    margin-top: -5px;
+  }
+}
+
 .main .page .logoBox .logoCont_Lr {
   width: 27%;
   height: auto;
@@ -1508,6 +1537,8 @@ body, html {
 
 .main .page .otherCont .box .icon {
   width: 45%;
+  -webkit-transition: all .6s;
+  transition: all .6s;
 }
 
 .main .page .otherCont .box .icon .fa, .main .page .otherCont .box .icon .fas, .main .page .otherCont .box .icon .fab, .main .page .otherCont .box .icon .far {
@@ -1524,6 +1555,38 @@ body, html {
 
 .main .page .otherCont .box .keepall {
   word-break: keep-all;
+}
+
+.main .page .otherCont .box:hover {
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.main .page .otherCont .box:hover .icon {
+  -webkit-animation: shake2 .6s forwards;
+          animation: shake2 .6s forwards;
+}
+
+@-webkit-keyframes shake2 {
+  0% {
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes shake2 {
+  0% {
+    -webkit-transform: translate3d(0, 0px, 0);
+            transform: translate3d(0, 0px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -10px, 0);
+            transform: translate3d(0, -10px, 0);
+  }
 }
 
 .main .page .btn2Box {
@@ -2088,6 +2151,10 @@ body, html {
   }
   .main .page .logoBox .logoCont .logo img {
     max-width: 80%;
+  }
+  .main .page .logoBox .logoCont:hover {
+    -webkit-animation: none;
+            animation: none;
   }
   .main .page .logoBox .logoCont_Lr {
     width: 33%;
