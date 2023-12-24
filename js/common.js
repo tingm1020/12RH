@@ -13,12 +13,11 @@ $(document).ready(function(){
     });
     // 依數列滾動到頁面
     $.each(Array(8),function(i){
-        var scrollPage = $('.navBtn' + (i));
-        var page = $('.anchor' + (i));
+        var scrollPage = $('.anchorBtn' + (i));
+        var page = $('.subanchor' + (i));
         $(scrollPage).click(function(){
-            menuClose();
             $('html,body').animate({
-                scrollTop: $(page).offset().top - 0 +"px"
+                scrollTop: $(page).offset().top - 50 +"px"
                 
             },1000);
         });
