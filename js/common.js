@@ -54,19 +54,35 @@ $(document).ready(function(){
         var logoPC = window.innerHeight * 1;
         var logo = window.innerHeight * .2;
         var scroll = $(window).scrollTop();
-
-        if(scroll > 30){
-            $('.kv .contBox').addClass('on');
-        } 
-        if(scroll > 650){
-            $('.page1 .title').addClass('on');
-        } 
-        if(scroll > 1200){
-            $('.page1 .logoBox').addClass('on');
-        } 
-        if(scroll > 3000){
-            counted();
-        } 
+        if(screen.width > 768){
+            if(scroll > 30){
+                $('.kv .contBox').addClass('on');
+            } 
+            if(scroll > 650){
+                $('.page1 .title').addClass('on');
+            } 
+            if(scroll > 1200){
+                $('.page1 .logoBox').addClass('on');
+            } 
+            if(scroll > 3000){
+                counted();
+            } 
+        }
+        if(screen.width < 767){
+            if(scroll > 30){
+                $('.kv .contBox').addClass('on');
+            } 
+            if(scroll > 30){
+                $('.page1 .title').addClass('on');
+            } 
+            if(scroll > 100){
+                $('.page1 .logoBox').addClass('on');
+            } 
+            if(scroll > 100){
+                counted();
+            } 
+        }
+        
     });
     function getScrollTop() {
         var bodyTop = 0;
