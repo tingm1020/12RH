@@ -2014,6 +2014,39 @@ body, html {
 /*=============================================
 =                     RWD                   =
 =============================================*/
+@media screen and (min-width: 1400px) {
+  .main .kv .block {
+    max-width: 1300px;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+  .main .kv .block .contBox {
+    max-width: 1100px;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+  .main .kv .block .contBox .box .cont .dec {
+    font-size: 28px;
+    -webkit-transition: all .6s;
+    transition: all .6s;
+  }
+  .main .page .block {
+    max-width: 1300px;
+  }
+  .main .page .otherCont {
+    max-width: 1100px;
+  }
+  .main .page .otherCont .box {
+    min-height: 140px;
+  }
+  .main .page .otherCont .box .title {
+    font-size: 36px;
+  }
+  .main .page .otherCont .box .icon .fas {
+    font-size: 70px;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .main .kv {
     padding-top: 160%;
