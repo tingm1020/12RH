@@ -752,7 +752,7 @@ body, html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  padding: 0% 10% 10%;
+  padding: 0% 10% 20%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -773,7 +773,17 @@ body, html {
   font-size: 1.7vw;
   line-height: 1.5;
   font-weight: 400;
-  margin: 5% auto;
+  margin: 5% auto 0;
+  color: #e1d5ac;
+}
+
+.main .kv .block .contBox .box .cont p {
+  position: relative;
+  display: block;
+  font-size: 1vw;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0 auto;
   color: #e1d5ac;
 }
 
@@ -861,7 +871,7 @@ body, html {
 .main .kv .block .subTitle {
   position: relative;
   margin: 3% auto;
-  text-align: left;
+  text-align: center;
   font-size: 3.2vw;
   line-height: 1.4;
   color: #fff;
@@ -2062,6 +2072,9 @@ body, html {
     -webkit-transition: all .6s;
     transition: all .6s;
   }
+  .main .kv .block .contBox .box .cont p {
+    font-size: 16px;
+  }
   .main .page .block {
     max-width: 1300px;
   }
@@ -2105,6 +2118,9 @@ body, html {
   }
   .main .kv .block .contBox .box .cont .dec {
     font-size: 2.5vw;
+  }
+  .main .kv .block .contBox .box .cont p {
+    font-size: 1.5vw;
   }
   .main .kv .block .contBox .box .cont .icon .fa, .main .kv .block .contBox .box .cont .icon .fas {
     font-size: 7vw;
@@ -2193,7 +2209,7 @@ body, html {
     font-size: 38px;
   }
   .main .kv .block .subTitle {
-    font-size: 38px;
+    font-size: 26px;
   }
   .main .page .contBox .title {
     max-width: 90%;
