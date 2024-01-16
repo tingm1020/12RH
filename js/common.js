@@ -64,7 +64,7 @@ $(document).ready(function(){
             if(scroll > 1200){
                 $('.page1 .logoBox').addClass('on');
             } 
-            if(scroll > 3000){
+            if(scroll > 2000){
                 counted();
             } 
         }
