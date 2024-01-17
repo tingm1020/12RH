@@ -27,28 +27,7 @@ $(document).ready(function(){
             scrollTop: $('.kv').offset().top - 50 + "px"
         },500);
     });
-    // 計數
-    function counted(){
-        $(".counter").each(function () {
-            var count = $(this);
-            var countTo = count.attr('data-count');
-            // console.log(countTo);
-            $({countNum:count.text()}).animate({
-                    countNum:countTo,
-                },
-                {
-                    duration:3000,
-                    easing:'linear',
-                    step:function(){
-                        count.text(Math.floor(this.countNum));
-                    },
-                    complete:function(){
-                        count.text(this.countNum);
-                    }
-            });
-        });
-    }
-    
+   
     // logo滑超過範圍變換顏色
     $(window).scroll(function(){
         var logoPC = window.innerHeight * 1;
@@ -63,10 +42,7 @@ $(document).ready(function(){
             } 
             if(scroll > 1200){
                 $('.page1 .logoBox').addClass('on');
-            } 
-            if(scroll > 2000){
-                counted();
-            } 
+            }  
         }
         if(screen.width < 767){
             if(scroll > 30){
@@ -77,9 +53,6 @@ $(document).ready(function(){
             } 
             if(scroll > 100){
                 $('.page1 .logoBox').addClass('on');
-            } 
-            if(scroll > 100){
-                counted();
             } 
         }
         
